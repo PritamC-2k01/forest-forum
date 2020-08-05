@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>sundarbans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <script src="https://kit.fontawesome.com/244a856735.js" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="css/forest1.css">
+<script src="js/js2.js"></script>
+</head>
+<body>
+
+<!-- <h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p> -->
+
+<div id="slideshow-container">
+  <nav>
+                
+    <div class="dropdown">
+    <button class="dropbtn">Home</button>
+    <div class="dropdown-content">
+        <a href="home.html">Go to Home</a>
+     </div>   
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">Sundarbans</button>
+    <div class="dropdown-content">
+
+        <a href="forest1.html" class="active">Home</a>
+        <a href="forest1.1.html">People of Sundarbans</a>
+        <a href="forest1.2.html" >Wildlife</a>
+        <a href="forest1.3.html">More About Sundarbans</a>
+        
+       
+  </div></div>
+    <div class="dropdown">
+    <button class="dropbtn">Gir</button>
+    <div class="dropdown-content">
+        <a href="forest2.html">Home</a>
+        <a href="forest2.1.html">More About Gir</a>
+        <a href="forest2.2.html">Wildlife</a>
+        <a href="forest2.3.html">People of Gir</a>
+    </div>
+    </div>
+    <!-- <a href="http://www.usaultimate.org/index.html" target="_blank">USA Ultimate</a> -->
+  </nav>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="img3/sundarban10.jpg" alt="image3">
+  <p class="head">One of the largest such forests in the world 
+ </p> 
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">2 / 3</div> -->
+  <img src="img3/sundarban9.jpg" alt="image4" >
+ <p class="head"> Lies on the delta of the Ganges, presents an excellent example of ongoing ecological processes. 
+</p></div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="img3/sundarban3.jpg" alt="image4">
+  <p class="head">Welcome to the Land of Royal Bengal Tiger
+  
+  </p>
+</div>
+</div>
+<div id="text">
+  <div class="mid">
+  <h1>Sundarbans</h1>
+  The Sunderbans ecosystem is a unique natural wonder of south Asia and the globe. The delta is spread over India and Bangladesh with an area of approximately 10,000 square kilometres and is enjoying the status of being largest halophytic mangrove forest in the world. It is a delta of the two great Indian River The Ganga and The Brahamputra which converges on the Bengal basin. The whole area is kingdom of the famous Royal Bengal Tigers.
+
+ <br/><br/> The Sunderbans National Park is a tiger and biosphere reserve located in the Sunderbans delta in the state of West Bengal (India). The Sunderbans is named after the Sundari trees which are found in bulk in this area. The park was established as a national park on 4th May 1984 as earlier it was created as wildlife sanctuary in 1977, designated as the core area of Sunderbans Tiger Reserve.
+  
+ <br/><br/> Welcome to the land of tigers called "The Sunderbans National Park" extends in an area of approximately 1,355 Kms. The most preferable time to visit this park is in the month of September and May. If you visit in winter months you could see the sun-bathing on the river banks of amazing and powerful Royal Bengal Tigers. Apart from Bengal Tiger other chief wild life species present in this park are Macaques, Indian Grey Mongoose, Leopard Cats, Ridley Sea Turtle, Wild Boar, Jungle Cat, Fox, Flying Fox, Fishing Cats, Chital, Pangolin and a lot others.
+<br/><br/> 
+  </div>
+  </div>
+  <!-- <video muted autoplay loop id="myVid" src="video/production ID_3859423.mp4" type="video/mp4"></video> -->
+  <a href="forest1.1.html"><div class="sub one">
+  <img src="img3/sundarban13.jpg" alt="image4">
+    <div class="overlay">
+   People of Sunderbans</div></div></a>
+   <a href="forest1.2.html">
+  <div class="sub two">
+    <img src="img3/sunderbans_tiger.jpg" alt="image5">
+    <div class="overlay">
+    wildlife</div></div></a>
+    <a href="forest1.3.html">
+      <div class="sub three">
+        <img src="img3/sundarban8.jpg" alt="image6">
+        <div class="overlay">
+        More about Sundarbans</div></div></a>
+    
+<div class="arrow first">
+ <img  src="img3/imgArow2.png" onclick="fun();" alt="image7">
+ 
+
+</div>
+  <div class="arrow next">
+  <img  src="img3/imgArow2.png" onclick="fun();" alt="image8">
+  
+</div>
+
+
+<!-- <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div> -->
+
+
+<script>
+var count=0;
+
+function fun(){
+
+if (count%2==0){
+  location.replace("#text");
+  for(i=0;i<2;i++){
+    // setInterval (document.getElementsByClassName("arrow")[i].style.display="none",1000);
+ document.getElementsByClassName("arrow")[i].style.transform="rotateX(180deg)";
+  document.getElementsByClassName("arrow")[i].style.transition="transform 2s";
+}
+}
+else{
+  location.replace("#slideshow-container");
+  for(i=0;i<2;i++){
+    // setInterval (document.getElementsByClassName("arrow")[i].style.display="none",1000);
+  document.getElementsByClassName("arrow")[i].style.transform="rotateX(0deg)";
+  document.getElementsByClassName("arrow")[i].style.transition="transform 2s";
+}
+}
+count++;
+}
+
+var slideIndex = 0;
+showSlides();
+
+
+function showSlides() {
+  
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  // var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+   if (slideIndex > slides.length) {slideIndex = 1}    
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block"; 
+  
+  // dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  
+}
+
+// function upDate(pic){
+// for(i=0;i<3;i++){
+//   document.getElementsByClassName("sub")[i].style.position="relative";
+//   document.getElementsByClassName("sub")[i].style.
+  
+// }
+// }
+
+
+
+</script>
+<footer>
+  <div>This page is created by Pritam Chakraborty instructed by Collean Van Lent . This page is a part of a capstone project</div>
+</footer>
+</body>
+</html> 

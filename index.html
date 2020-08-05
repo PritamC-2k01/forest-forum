@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+       
+        <head>
+            <meta content="width=device-width, initial-scale=1 "  name="viewport"/>
+        
+            <title>index</title>
+            <link rel="stylesheet" href="css/final.css">
+            <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+            <script src="js/js2.js"></script>
+            <style>
+                .hide{
+                    display: none;
+                    
+                }
+                .show{
+                    position: absolute;
+                    display: inline;
+                    top:40vh;
+                    left:45vw;
+                    font-family: 'Lemonada', cursive;
+                    /* font-size: large; */
+                    font-weight: 900;
+                font-size: 2.5em;
+                    
+                }
+                
+            </style>
+        </head>
+
+        <body>
+            <!-- <div id="pic and link"></div> -->
+            <div id="cover">
+                <div class="first">
+                    <br/>
+                </div>
+                <div class="second">
+                    
+                </div>
+                <div class="third">
+                    
+                </div>
+                <div class="fourth">
+                    
+                </div>
+                <img src="img3/img2.jpg" class="forest" alt="image1">
+            <img src="img3/bird2_gif.gif" class="image" alt="image2">
+           <div class ="hide">forest forum
+          
+           </div>
+           <div class ="hide">Words From Woods...
+
+        </div>
+           <div class ="show "></div>
+           <br/>
+           <div class ="show"></div>
+           <script>
+               function fun(){
+                var txt = document.getElementsByClassName("hide")[0].innerHTML;
+                document.getElementsByClassName("show")[0].innerHTML = txt ; 
+                
+               }
+               setTimeout(fun,2200);
+               function funnew(){
+                var txt = document.getElementsByClassName("hide")[1].innerHTML;
+                document.getElementsByClassName("show")[1].innerHTML = "<br/><br/>"+txt ; 
+                
+               }
+               setTimeout(funnew,22000);
+               setTimeout(function(){location.replace("home.html");},24000);
+               
+            // fun();
+            var textWrapper = document.querySelector('.show');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.show .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.show',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  
+           </script>
+           
+            
+</div>
+
+        </body>
+
+        
+</html>
