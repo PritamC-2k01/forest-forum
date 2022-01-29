@@ -29,6 +29,8 @@
         </head>
 
         <body>
+
+            
             <!-- <div id="pic and link"></div> -->
             <div id="cover">
                 <div class="first">
@@ -45,6 +47,7 @@
                 </div>
                 <img src="img3/img2.jpg" class="forest" alt="image1">
             <img src="img3/bird2_gif.gif" class="image" alt="image2">
+            <img src="img3/plant.gif" class="plant" alt="image3">
            <div class ="hide">forest forum
           
            </div>
@@ -60,14 +63,14 @@
                 document.getElementsByClassName("show")[0].innerHTML = txt ; 
                 
                }
-               setTimeout(fun,2200);
+               setTimeout(fun,7200);
                function funnew(){
                 var txt = document.getElementsByClassName("hide")[1].innerHTML;
                 document.getElementsByClassName("show")[1].innerHTML = "<br/><br/>"+txt ; 
                 
                }
                setTimeout(funnew,22000);
-               setTimeout(function(){location.replace("home.html");},24000);
+            //    setTimeout(function(){location.replace("home.html");},24000);
                
             // fun();
             var textWrapper = document.querySelector('.show');
@@ -87,9 +90,11 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+  
 
   
            </script>
+           
            
             
 </div>
