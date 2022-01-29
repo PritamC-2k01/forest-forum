@@ -51,7 +51,8 @@ body{
     left:0;
     padding-right:20%;
     padding-left: 5%;
-    padding-top: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     width:90%;
     height:30%;
     color: white;
@@ -101,7 +102,7 @@ body{
     box-shadow: 0 9px #999;
     animation-name: fade;
     animation-duration: 1s;
-    animation-delay: 22s;
+    animation-delay: 25s;
     animation-fill-mode: forwards;
   }
   .button.yes{background-color: #4CAF50;}
