@@ -14,17 +14,19 @@ img{
 
 body{
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 .forest{
     animation-name: new;
-    animation-delay: 15.3s;
+    animation-delay: 13s;
     animation-duration:3s ;
     animation-fill-mode: forwards;
 }
 
 .plant {
   z-index:3;
-  animation: hideAnimation 0s ease-in 5s;
+  animation: hideAnimation 0s ease-in 8s;
   animation-fill-mode: forwards;
 }
 
@@ -40,7 +42,7 @@ body{
     z-index: 2;
     animation-name: move;
     animation-duration: 8s;
-    animation-delay: 5s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
     
 }
@@ -59,35 +61,38 @@ body{
   height:100vh;
 
 }
+.show{
+  left:46%;
 
+}
 .first{
 
-    width: 50%;
-    height:50vh;
+    width:50%;
+    height:50%;
     background-color:white;
     display:inline-block;
     text-align:center;
     /*     border-radius: 25% 0 0 0;
  */
- animation-delay: 8s;
+    animation-delay: 13s;
     animation-fill-mode: forwards;
     animation-name: fir;
-    animation-duration: 10s;
+    animation-duration: 7s;
     transition-timing-function: linear();
 
 
 }
 .second{
-    width: 50%;
+    width: 50vw;
     height:50vh;
     background-color:white;
     /* display: inline-block; */
     float:right;
     text-align:center;
     animation-name: sec;
-    animation-delay: 8s;
+    animation-delay: 13s;
     animation-fill-mode: forwards;
-    animation-duration: 10s;
+    animation-duration: 7s;
     transition-timing-function: linear();
     
 
@@ -95,7 +100,7 @@ body{
 }
 
 .third{
-    width: 50%;
+    width: 50vw;
     height:50vh;
     background-color:white;
     display: inline-block;
@@ -103,13 +108,13 @@ body{
     text-align:center;
     /* border-radius: 0 25% 0 0; */
     animation-name: thd;
-    animation-duration: 10s;
-    animation-delay: 8s;
+    animation-duration: 7s;
+    animation-delay: 13s;
     animation-fill-mode: forwards;
     transition-timing-function: linear();
 }
 .fourth{
-    width: 50%;
+    width: 50vw;
     height:50vh;
     background-color:white;
     /* display: inline-block; */
@@ -118,8 +123,8 @@ body{
     text-align:center;
     /* border-radius: 25% 0 0 0; */
     animation-name: four;
-    animation-duration: 10s;
-    animation-delay: 8s;
+    animation-duration: 7s;
+    animation-delay: 13s;
     animation-fill-mode: forwards;
     transition-timing-function: linear();
 }
@@ -159,7 +164,7 @@ body{
 }
 @keyframes new{
     from{transform: scale(1,1); visibility: hidden;}
-    to{transform: scale(2,2); visibility: visible;}
+    to{transform: scale(1.75,1.75); visibility: visible;}
 }
 @media (max-width:800px){
   img{
