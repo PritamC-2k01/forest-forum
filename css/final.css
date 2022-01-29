@@ -17,25 +17,34 @@ body{
 }
 .forest{
     animation-name: new;
-    animation-delay: 19s;
+    animation-delay: 15.3s;
     animation-duration:3s ;
     animation-fill-mode: forwards;
 }
 
+.plant {
+  z-index:3;
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
 
-/* 
-#hide{
-    display: none;
-    
-} */
-
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
 
 .image{
     z-index: 2;
     animation-name: move;
     animation-duration: 8s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
+    
 }
+
 @keyframes move{
     from{transform: translate(-50vw,0);}
     to {transform : translate(100vw,0);}
@@ -50,6 +59,7 @@ body{
   height:100vh;
 
 }
+
 .first{
 
     width: 50%;
@@ -116,38 +126,35 @@ body{
 
 
 @keyframes fir{
-    0% {border-radius: 0 0 0 0;}
-    /* 25% {border-radius: 0 0 25% 0;
-    opacity:99%;}
-    50% {border-radius: 0 0 50% 0;
-    opacity:95%;}
-    75% {border-radius: 0 0 75% 0;
-    opacity:90%;} */
+    0% {border-radius: 0 0 0 0;opacity:100%;}
+    25% {opacity:99%;}
+    50% {opacity:99%;}
+    75% {opacity:99%;}
     100% {border-radius: 0 0 100% 0;
     opacity:0.0;}
     
 }
 @keyframes sec {
-    0% {border-radius: 0 0 0 0;}
-    /* 25% {border-radius: 0 0 0 25%;}
-    50%  {border-radius: 0 0 0 50%;}
-    75% {border-radius: 0 0 0 75%;} */
+    0% {border-radius: 0 0 0 0;opacity:100%;}
+    25% {opacity:99%;}
+    50% {opacity:99%;}
+    75% {opacity:99%;}
     100% {border-radius: 0 0 0 100%;opacity:0.0;}
     
 }
 @keyframes thd{
-    0% {border-radius: 0 0 0 0;}
-    /* 25% {border-radius: 0 25% 0 0;}
-    50% {border-radius: 0 50% 0 0;}
-    75% {border-radius: 0 75% 0 0;} */
+    0% {border-radius: 0 0 0 0;opacity:100%;}
+    25% {opacity:99%;}
+    50% {opacity:99%;}
+    75% {opacity:99%;}
     100%{border-radius: 0 100% 0 0;opacity:0.0;}
 }
 
 @keyframes four{
-   0%{ border-radius: 0 0 0 0;}
-    /* 25% {border-radius: 25% 0 0 0;}
-    50% {border-radius: 50% 0 0 0;}
-    75% {border-radius: 75% 0 0 0;} */
+   0%{ border-radius: 0 0 0 0;opacity:100%;}
+   25% {opacity:99%;}
+   50% {opacity:99%;}
+   75% {opacity:99%;}
     100% {border-radius: 100% 0 0 0;opacity:0.0;}
 }
 @keyframes new{
